@@ -139,10 +139,10 @@ p { margin: 0 0 1em; }
 .topbar a:hover { text-decoration: underline; }
 .topbar-left { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
 .topbar svg { width: 16px; height: 16px; display: inline-block; vertical-align: -3px; margin-right: 6px; }
-.nav-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
+.nav-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 96px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 .brand-mark {
-  width: 50px; height: 50px; flex: none; border-radius: 50%;
+  width: 76px; height: 76px; flex: none; border-radius: 50%;
   display: block; filter: drop-shadow(3px 3px 0 var(--ink));
   transition: transform .3s ease;
 }

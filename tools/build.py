@@ -334,7 +334,7 @@ def header(active):
   </div></div>
   <div class="wrap nav-row">
     <a class="brand" href="index.html" aria-label="{c["name"]} home">
-      <span class="brand-mark"><img src="img/logo-mark.svg" alt="" width="50" height="50"></span>
+      <span class="brand-mark"><img src="img/logo-mark.svg" alt="" width="76" height="76"></span>
       <span><span class="brand-name">{c["name"]}</span><span class="brand-sub">{c["sub"]}</span></span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
@@ -354,7 +354,7 @@ def footer():
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="index.html"><span class="brand-mark"><img src="img/logo-mark.svg" alt="" width="50" height="50"></span><span><span class="brand-name">{c["name"]}</span><span class="brand-sub">{c["sub"]}</span></span></a>
+        <a class="brand" href="index.html"><span class="brand-mark"><img src="img/logo-mark.svg" alt="" width="76" height="76"></span><span><span class="brand-name">{c["name"]}</span><span class="brand-sub">{c["sub"]}</span></span></a>
         <p class="foot-about">A luxury pet salon, spa and boutique in Boynton Beach. Every pet is family here, and every groom is done with love.</p>
         <div class="socials">
           <a href="{c["instagram"]}" target="_blank" rel="noopener" aria-label="Instagram">{icon("instagram")}</a>
