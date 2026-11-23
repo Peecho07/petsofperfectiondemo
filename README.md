@@ -7,10 +7,10 @@ Plain HTML, CSS and JS. No frameworks, no build step needed to host.
 Home · Services · Cats · About · Gallery · Reviews · FAQ · Privacy & SMS Policy · Book · 404
 
 ## Deploy on GitHub Pages
-1. Create a repo named `pet-perfection-site` under Peecho07.
+1. Create a repo named `petsofperfectiondemo` under Peecho07.
 2. Upload everything in this folder to the repo root (index.html must be at the root).
 3. Settings > Pages > Deploy from branch > `main` / `(root)`.
-4. Live at `https://peecho07.github.io/pet-perfection-site/`.
+4. Live at `https://peecho07.github.io/petsofperfectiondemo/`.
 
 Netlify works too: drag the folder in, publish directory = root.
 
