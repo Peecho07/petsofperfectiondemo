@@ -1003,7 +1003,7 @@ def build_book():
             <div class="field"><label for="breed">Breed <span class="opt">(optional)</span></label><input type="text" id="breed" name="breed" placeholder="Doodle, Shih Tzu, mystery mix..."></div>
             <div class="field full">
               <span class="label" id="pet-type-label">Dog or cat?</span>
-              <div class="pick-grid" role="radiogroup" aria-labelledby="pet-type-label" aria-describedby="err-pet_type">
+              <div class="pick-grid pick-2" role="radiogroup" aria-labelledby="pet-type-label" aria-describedby="err-pet_type">
                 <div class="pick"><input type="radio" name="pet_type" id="type-dog" value="Dog"><label for="type-dog">{icon("dog")}Dog</label></div>
                 <div class="pick"><input type="radio" name="pet_type" id="type-cat" value="Cat"><label for="type-cat">{icon("cat")}Cat</label></div>
               </div>
@@ -1015,9 +1015,9 @@ def build_book():
 
         <fieldset class="form-step">
           <legend><span class="n">3</span>Pick the pampering</legend>
-          <p class="hint" style="margin:-8px 0 14px">Choose as many as you like.</p>
-          <div class="pick-grid" id="dog-services" role="group" aria-label="Dog services" aria-describedby="err-services">{picks(dog_opts, "svc")}</div>
-          <div class="pick-grid" id="cat-services" role="group" aria-label="Cat services" aria-describedby="err-services" hidden>{picks(cat_opts, "svc")}</div>
+          <p class="hint step-hint">Choose as many as you like.</p>
+          <div class="pick-grid pick-cols" id="dog-services" role="group" aria-label="Dog services" aria-describedby="err-services">{picks(dog_opts, "svc")}</div>
+          <div class="pick-grid pick-cols" id="cat-services" role="group" aria-label="Cat services" aria-describedby="err-services" hidden>{picks(cat_opts, "svc")}</div>
           {err("services")}
         </fieldset>
 
@@ -1034,7 +1034,7 @@ def build_book():
 
         <fieldset class="form-step">
           <legend><span class="n">5</span>Last bits</legend>
-          <div style="display:grid;gap:16px">
+          <div class="last-bits">
             <div>
               <label class="check"><input type="checkbox" name="vaccines" id="vaccines" value="yes" aria-describedby="err-vaccines"><span>My pet's vaccinations, including rabies, are current.<small>Please bring proof on your first visit.</small></span></label>
               {err("vaccines")}
@@ -1058,7 +1058,7 @@ def build_book():
           <div>When: <span data-s-date></span></div>
           <div>Services: <span data-s-services></span></div>
         </div>
-        <div class="btn-row" style="justify-content:center">
+        <div class="btn-row center">
           <button type="button" class="btn btn-mint" id="book-another">{icon("plus")}Book another pet</button>
           <a class="btn" href="index.html">Back to home</a>
         </div>

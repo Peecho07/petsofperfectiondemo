@@ -575,3 +575,61 @@ p { margin: 0 0 1em; }
 @media (max-width: 760px) { .brand-name { font-size: 1.35rem; } .brand-sub { font-size: .72rem; } }
 .nav-cta .btn { white-space: nowrap; }
 @media (max-width: 1000px) { .brand-name { font-size: 1.4rem; } }
+
+/* ---------- booking: linear, centered, symmetrical, phone-first ---------- */
+.book-grid { grid-template-columns: minmax(0, 1fr); max-width: 760px; margin-inline: auto; gap: 28px; justify-items: stretch; }
+.form-card { padding: clamp(18px, 5vw, 40px); }
+.form-step { margin: 0 0 clamp(26px, 5vw, 36px); padding-bottom: clamp(22px, 4vw, 30px); border-bottom: 2px dashed var(--line); }
+.form-step:last-of-type { border-bottom: 0; padding-bottom: 0; margin-bottom: 24px; }
+.form-step legend { font-size: clamp(1.15rem, 4.6vw, 1.4rem); }
+.step-hint { margin: -8px 0 14px; }
+.fields { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.field { min-width: 0; }
+.field input, .field select, .field textarea { max-width: 100%; min-width: 0; font-size: 16px; }
+.field input[type="date"] { -webkit-appearance: none; appearance: none; display: block; text-align: left; }
+.field select { -webkit-appearance: none; appearance: none; padding-right: 40px;
+  background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231F2A44' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center / 20px; }
+.field .hint { min-height: 0; }
+
+/* equal-width option tiles: Dog/Cat in 2 columns, services in 2 columns */
+.pick-grid { display: grid; gap: 10px; }
+.pick-grid[hidden] { display: none; }
+.pick-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pick-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pick label { display: flex; justify-content: center; align-items: center; text-align: center; width: 100%; min-height: 54px; padding: 8px 12px; border-radius: 16px; line-height: 1.2; }
+.pick-2 label { min-height: 58px; font-size: 1.05rem; }
+
+.last-bits { display: grid; gap: 18px; }
+.check { align-items: flex-start; }
+.submit-row { flex-direction: column; align-items: stretch; text-align: center; gap: 12px; }
+.submit-row .btn { width: 100%; justify-content: center; min-height: 58px; font-size: 1.05rem; }
+.submit-row .fine { text-align: center; }
+.btn-row.center { justify-content: center; }
+
+/* contact card sits under the form, same width, centered content */
+.side-card { position: static; width: 100%; text-align: center; padding: clamp(22px, 5vw, 32px); }
+.side-card ul { justify-items: center; }
+.side-card li { justify-content: center; text-align: left; }
+.side-card ul { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.side-card li { align-items: flex-start; }
+
+@media (max-width: 600px) {
+  .fields { grid-template-columns: minmax(0, 1fr); }
+  .form-card { box-shadow: 4px 4px 0 var(--ink); }
+  .side-card ul { grid-template-columns: minmax(0, 1fr); }
+  .side-card li { justify-content: flex-start; max-width: 300px; width: 100%; margin-inline: auto; }
+}
+@media (max-width: 360px) { .pick-cols { grid-template-columns: minmax(0, 1fr); } .pick label { font-size: .95rem; } }
+.pick-cols .pick:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.submit-row { margin-top: 4px; }
+@media (max-width: 360px) { .pick-cols .pick:last-child:nth-child(odd) { grid-column: auto; } }
+
+/* small phones: keep the header inside the screen */
+@media (max-width: 420px) {
+  .brand { gap: 8px; min-width: 0; }
+  .brand-mark { width: 56px; height: 56px; }
+  .brand-name { font-size: 1.2rem; }
+  .brand-sub { font-size: .66rem; letter-spacing: .08em; }
+  .nav-row { gap: 8px; min-height: 76px; }
+  .topbar .wrap { gap: 8px; }
+}

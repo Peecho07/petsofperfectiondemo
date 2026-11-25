@@ -78,7 +78,7 @@
             <div class="field"><label for="breed">Breed <span class="opt">(optional)</span></label><input type="text" id="breed" name="breed" placeholder="Doodle, Shih Tzu, mystery mix..."></div>
             <div class="field full">
               <span class="label" id="pet-type-label">Dog or cat?</span>
-              <div class="pick-grid" role="radiogroup" aria-labelledby="pet-type-label" aria-describedby="err-pet_type">
+              <div class="pick-grid pick-2" role="radiogroup" aria-labelledby="pet-type-label" aria-describedby="err-pet_type">
                 <div class="pick"><input type="radio" name="pet_type" id="type-dog" value="Dog"><label for="type-dog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 5 3.5 7.5 5 13l2-1.5"/><path d="M17 5l3.5 2.5L19 13l-2-1.5"/><path d="M7 5h10v7a5 5 0 0 1-10 0z"/><path d="M10 9.5h.01M14 9.5h.01M11 13h2"/></svg>Dog</label></div>
                 <div class="pick"><input type="radio" name="pet_type" id="type-cat" value="Cat"><label for="type-cat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 10V4l4.5 3h7L20 4v6c0 4.97-3.58 9-8 9s-8-4.03-8-9z"/><path d="M9 11.5h.01M15 11.5h.01M10.5 15c1 .8 2 .8 3 0"/></svg>Cat</label></div>
               </div>
@@ -90,9 +90,9 @@
 
         <fieldset class="form-step">
           <legend><span class="n">3</span>Pick the pampering</legend>
-          <p class="hint" style="margin:-8px 0 14px">Choose as many as you like.</p>
-          <div class="pick-grid" id="dog-services" role="group" aria-label="Dog services" aria-describedby="err-services"><div class="pick"><input type="checkbox" name="services" id="svc-full-groom" value="full-groom" data-label="The Full Groom"><label for="svc-full-groom">The Full Groom</label></div><div class="pick"><input type="checkbox" name="services" id="svc-spa-bath" value="spa-bath" data-label="Spa Bath & Tidy"><label for="svc-spa-bath">Spa Bath & Tidy</label></div><div class="pick"><input type="checkbox" name="services" id="svc-hand-strip" value="hand-strip" data-label="Hand-Stripping"><label for="svc-hand-strip">Hand-Stripping</label></div><div class="pick"><input type="checkbox" name="services" id="svc-puppy" value="puppy" data-label="Puppy's First Groom"><label for="svc-puppy">Puppy's First Groom</label></div><div class="pick"><input type="checkbox" name="services" id="svc-deshed" value="deshed" data-label="De-Shed Treatment"><label for="svc-deshed">De-Shed Treatment</label></div><div class="pick"><input type="checkbox" name="services" id="svc-nails" value="nails" data-label="Nail trim only"><label for="svc-nails">Nail trim only</label></div><div class="pick"><input type="checkbox" name="services" id="svc-teeth" value="teeth" data-label="Teeth brushing"><label for="svc-teeth">Teeth brushing</label></div></div>
-          <div class="pick-grid" id="cat-services" role="group" aria-label="Cat services" aria-describedby="err-services" hidden><div class="pick"><input type="checkbox" name="services" id="svc-cat-bath" value="cat-bath" data-label="Cat Bath & Fluff Dry"><label for="svc-cat-bath">Cat Bath & Fluff Dry</label></div><div class="pick"><input type="checkbox" name="services" id="svc-lion-cut" value="lion-cut" data-label="The Lion Cut"><label for="svc-lion-cut">The Lion Cut</label></div><div class="pick"><input type="checkbox" name="services" id="svc-cat-comb" value="cat-comb" data-label="Comb-Out & De-Mat"><label for="svc-cat-comb">Comb-Out & De-Mat</label></div><div class="pick"><input type="checkbox" name="services" id="svc-cat-nails" value="cat-nails" data-label="Cat Nail Trim"><label for="svc-cat-nails">Cat Nail Trim</label></div></div>
+          <p class="hint step-hint">Choose as many as you like.</p>
+          <div class="pick-grid pick-cols" id="dog-services" role="group" aria-label="Dog services" aria-describedby="err-services"><div class="pick"><input type="checkbox" name="services" id="svc-full-groom" value="full-groom" data-label="The Full Groom"><label for="svc-full-groom">The Full Groom</label></div><div class="pick"><input type="checkbox" name="services" id="svc-spa-bath" value="spa-bath" data-label="Spa Bath & Tidy"><label for="svc-spa-bath">Spa Bath & Tidy</label></div><div class="pick"><input type="checkbox" name="services" id="svc-hand-strip" value="hand-strip" data-label="Hand-Stripping"><label for="svc-hand-strip">Hand-Stripping</label></div><div class="pick"><input type="checkbox" name="services" id="svc-puppy" value="puppy" data-label="Puppy's First Groom"><label for="svc-puppy">Puppy's First Groom</label></div><div class="pick"><input type="checkbox" name="services" id="svc-deshed" value="deshed" data-label="De-Shed Treatment"><label for="svc-deshed">De-Shed Treatment</label></div><div class="pick"><input type="checkbox" name="services" id="svc-nails" value="nails" data-label="Nail trim only"><label for="svc-nails">Nail trim only</label></div><div class="pick"><input type="checkbox" name="services" id="svc-teeth" value="teeth" data-label="Teeth brushing"><label for="svc-teeth">Teeth brushing</label></div></div>
+          <div class="pick-grid pick-cols" id="cat-services" role="group" aria-label="Cat services" aria-describedby="err-services" hidden><div class="pick"><input type="checkbox" name="services" id="svc-cat-bath" value="cat-bath" data-label="Cat Bath & Fluff Dry"><label for="svc-cat-bath">Cat Bath & Fluff Dry</label></div><div class="pick"><input type="checkbox" name="services" id="svc-lion-cut" value="lion-cut" data-label="The Lion Cut"><label for="svc-lion-cut">The Lion Cut</label></div><div class="pick"><input type="checkbox" name="services" id="svc-cat-comb" value="cat-comb" data-label="Comb-Out & De-Mat"><label for="svc-cat-comb">Comb-Out & De-Mat</label></div><div class="pick"><input type="checkbox" name="services" id="svc-cat-nails" value="cat-nails" data-label="Cat Nail Trim"><label for="svc-cat-nails">Cat Nail Trim</label></div></div>
           <p class="error-msg" data-error-for="services" id="err-services"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V13M12 16.5v.01"/></svg><span></span></p>
         </fieldset>
 
@@ -109,7 +109,7 @@
 
         <fieldset class="form-step">
           <legend><span class="n">5</span>Last bits</legend>
-          <div style="display:grid;gap:16px">
+          <div class="last-bits">
             <div>
               <label class="check"><input type="checkbox" name="vaccines" id="vaccines" value="yes" aria-describedby="err-vaccines"><span>My pet's vaccinations, including rabies, are current.<small>Please bring proof on your first visit.</small></span></label>
               <p class="error-msg" data-error-for="vaccines" id="err-vaccines"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V13M12 16.5v.01"/></svg><span></span></p>
@@ -133,7 +133,7 @@
           <div>When: <span data-s-date></span></div>
           <div>Services: <span data-s-services></span></div>
         </div>
-        <div class="btn-row" style="justify-content:center">
+        <div class="btn-row center">
           <button type="button" class="btn btn-mint" id="book-another"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg>Book another pet</button>
           <a class="btn" href="index.html">Back to home</a>
         </div>
